@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Avtosib.BusstopEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Avtosib"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel  Orientation="Vertical"  VerticalAlignment="Center" MaxWidth="320" Background="#F8F5F5" CornerRadius="20" >
+            <TextBlock x:Name="Name" TextAlignment="Center" FontSize ="20" FontWeight="Normal" Margin="0 50 0 30" >Изменить остановку</TextBlock>
+            <ScrollViewer>
+                <StackPanel  VerticalAlignment="Center">
+                    
+                    <TextBox Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Center" MaxWidth="320" Name="Busstop" PlaceholderText="Название остановки" ></TextBox>
+                  
+                </StackPanel>
+            </ScrollViewer>
+            <Button Click="Update" HorizontalAlignment="Center"  Background="#A699F8" Margin="0 0 0 10" Width="220" Height="32" CornerRadius="12" >Сохранить изменения</Button>
+            <Button Click="Delete" HorizontalAlignment="Center"  Background="#A699F8" Margin="0 0 0 10" Width="220" Height="32" CornerRadius="12" >Удалить</Button>
+            <Button Click ="Cancel" HorizontalAlignment="Center"   Background="#F8F5F5" BorderBrush="#A699F8" Margin="0 0 0 50" Width="220" Height="32" CornerRadius="12">Назад</Button>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Avtosib.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Avtosib"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Grid>
+        <StackPanel Orientation="Vertical"  VerticalAlignment="Center" MaxWidth="320" Background="#F8F5F5" CornerRadius="20" >
+
+            <TextBlock TextAlignment="Center" FontSize ="30" FontWeight="Normal" Margin="0 50 0 30" >ВХОД</TextBlock>
+            <TextBox x:Name="Number" PlaceholderText="Номер телефона"  Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black"></TextBox>
+            <PasswordBox x:Name="Password"  PlaceholderText="Пароль" Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black" ></PasswordBox>
+            <Button Click="Login" HorizontalAlignment="Center"  Margin="50 0 50 15" Width="220" Height="32" Background="#A699F8" CornerRadius="12">Войти</Button>
+            <Button  Click="Button_Reg" HorizontalAlignment="Center"  Background="#F8F5F5" BorderBrush="#A699F8" Margin="0 0 0 15" Width="220" Height="32"  CornerRadius="12">Создать аккаунт</Button>
+            <TextBlock TextAlignment="Center" FontWeight="Normal" Margin="0 0 0 50" x:Name="Error"></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Page>

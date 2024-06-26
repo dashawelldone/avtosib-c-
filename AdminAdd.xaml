@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Avtosib.AdminAdd"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Avtosib"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <StackPanel Orientation="Vertical"  VerticalAlignment="Center" MaxWidth="320" Background="#F8F5F5" CornerRadius="20" >
+
+            <TextBlock TextAlignment="Center" FontSize ="30" FontWeight="Normal" Margin="0 50 0 30" TextWrapping="Wrap" >Добавление администратора</TextBlock>
+            <TextBox x:Name="NumberReg" PlaceholderText="Номер телефона"  Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black"></TextBox>
+            <TextBox x:Name="Surname" PlaceholderText="Фамилия"  Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black"></TextBox>
+            <TextBox x:Name="NameReg" PlaceholderText="Имя"  Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black"></TextBox>
+            <PasswordBox x:Name="PasswordReg"  PlaceholderText="Пароль" Margin="50 0 50 15" CornerRadius="12" BorderThickness="1" BorderBrush="Black" ></PasswordBox>
+            <Button  Click="Button_Add" HorizontalAlignment="Center"  Margin="0 0 0 0" Width="220" Height="32" Background="#A699F8" CornerRadius="12">Добавить</Button>
+            <Button  Click="Cancel" HorizontalAlignment="Center"  Margin="0 10 0 50" Width="220" Height="32"  Background="#F8F5F5" BorderBrush="#A699F8" CornerRadius="12">Назад</Button>
+        </StackPanel>
+    </Grid>
+</Page>

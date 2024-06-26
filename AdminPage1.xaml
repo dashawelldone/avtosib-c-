@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="Avtosib.AdminPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Avtosib"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <StackPanel Orientation="Vertical" MaxWidth="350">
+            <TextBlock TextAlignment="Center" FontSize ="28" FontWeight="Normal" Margin="0 200 0 50">Забронировать автобус</TextBlock>
+            <StackPanel Orientation="Vertical">
+                <ComboBox PlaceholderText="Выберите маршрут" Width="250" Height="32" BorderThickness="1.5" BorderBrush="Gray" HorizontalAlignment="Center">
+                    <ComboBoxItem>
+                        <StackPanel >
+                            <TextBlock>№372</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel>
+                            <TextBlock>№375</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" MaxWidth="250" >
+                <Viewbox Margin="0 15 0 15" Height="32" >
+                    <DatePicker  x:Name="datePicker1"/>
+                </Viewbox>
+                <TimePicker HorizontalAlignment="Center" Height="32" Width="250" ClockIdentifier="24HourClock"  />
+            </StackPanel>
+
+
+            <StackPanel Orientation="Vertical">
+                <ComboBox Margin="0 15 0 15" PlaceholderText="Выберите остановку" Width="250" Height="32"  BorderThickness="1.5" BorderBrush="Gray" HorizontalAlignment="Center">
+                    <ComboBoxItem>
+                        <StackPanel >
+                            <TextBlock>Баргузин</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <StackPanel>
+                            <TextBlock>Автосервис</TextBlock>
+                        </StackPanel>
+                    </ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+         
+
+            <Button HorizontalAlignment="Center"  Background="#A699F8" Margin="0 20 0 0" Width="220" Height="32"  CornerRadius="12">Сохранить изменения</Button>
+
+        </StackPanel>
+    </Grid>
+</Page>
